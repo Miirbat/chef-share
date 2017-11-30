@@ -1,0 +1,7 @@
+<%= form_for(@recipe_ingredient) do |t| %>
+  <%= t.hidden_field :recipe_id, value: @recipe.id %><br>
+  <%= t.collection_select :ingredient_id, Ingredient.order(:name), :id, :name, { prompt: "Choose an ingredient*" }, required: true %><br>
+  <%= t.number_field :quantity, placeholder: 'quantity', step: :any, min: '.01', required: true, class: 'validate'%>
+  <%= t.select :units, ['cup(s)', 'gram(s)', 'kilogram(s)', 'liter(s)', 'mililiter(s)', 'pound(s)', 'ounce(s)', 'pint(s)', 'teaspoon(s)', 'tablespoon(s)'], { prompt: "Choose a unit of measure" }%><br><br>
+  <%= t.submit "Add Ingredient to Recipe", class:'btn' %>
+<% end %>

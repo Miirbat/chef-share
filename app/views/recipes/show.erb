@@ -1,0 +1,169 @@
+<div class="row" style="padding-top:20px">
+   <% if @recipe.image? %>
+   <%= image_tag @recipe.image.url(:medium) %>
+   <% end %>
+</div>
+<h3><%= @recipe.name %></h3>
+<h5>made by <%= @author.first_name %></h5>
+<% if @recipe.times_saved == 1 %>
+  <h6>Saved by <%= @recipe.times_saved %> user</h6>
+<% elsif @recipe.times_saved > 1 %>
+  <h6>Saved by <%= @recipe.times_saved %> users</h6>
+<% end %>
+<div style="margin: 20px 0 0 0 ">
+   <% if current_user == @recipe.author%>
+   <div style="display: inline-block;">
+      <% if @recipe.published == true%>
+      <%= form_for @recipe do |f| %>
+      <%= f.hidden_field :published, :value => false %>
+      <%= f.submit "Unpublish Recipe", class:'btn'%>
+      <% end %>
+      <% else %>
+      <%= form_for @recipe do |f| %>
+      <%= f.hidden_field :published, :value => true %>
+      <%= f.submit "Publish Recipe", class:'btn'%>
+      <% end %>
+      <% end %>
+   </div>
+   <%= link_to "Edit", edit_recipe_path(@recipe), class:'btn'%>
+   <a class="modal-trigger waves-effect waves-light btn" href="#delete_recipe_modal">Delete</a>
+   <% else %>
+   <!-- THIS BUTTON IS NOT YET WORKING WORKING ON IT NOW -->
+   <% if logged_in? %>
+   <% if current_user.saved_recipes.include?(@recipe) %>
+   <%= link_to "Unsave", saver_recipe_path(SaverRecipe.find_by(saver_id: current_user.id, saved_recipe_id: @recipe.id)), method: :delete, class:'btn' %>
+   <% else %>
+   <%= form_for SaverRecipe.new do |f| %>
+   <%= f.hidden_field :saver_id, :value => current_user.id %>
+   <%= f.hidden_field :saved_recipe_id, :value => @recipe.id %>
+   <%= f.submit "Save Recipe", class:'btn'%>
+   <% end %>
+   <% end %>
+   <% else %>
+   <a class="btn" onclick="Materialize.toast('Please sign up or sign in to save this recipe.', 4000)">Save Recipe</a>
+   <% end %>
+   <% end %>
+</div>
+<br><br>
+<div style="margin-bottom:50px">
+   <h5>Dietary Compliance</h5>
+   <% if @recipe.vegetarian == true%>
+   <div class="col s2" style="display:block;">
+      <div style="display:inline-block;">
+         <i class="material-icons">done</i>
+      </div>
+      <div style="display:inline-block;">
+         Vegetarian
+      </div>
+   </div>
+   <% end %>
+   <% if @recipe.vegan == true%>
+   <div class="col s2" style="display:block;">
+      <div style="display:inline-block;">
+         <i class="material-icons">done</i>
+      </div>
+      <div style="display:inline-block;">
+         Vegan
+      </div>
+   </div>
+   <% end %>
+   <% if @recipe.gluten_free == true%>
+   <div class="col s2" style="display:block;">
+      <div style="display:inline-block;">
+         <i class="material-icons">done</i>
+      </div>
+      <div style="display:inline-block;">
+         Gluten-Free
+      </div>
+   </div>
+   <% end %>
+   <% if @recipe.low_carb == true%>
+   <div class="col s2" style="display:block;">
+      <div style="display:inline-block;">
+         <i class="material-icons">done</i>
+      </div>
+      <div style="display:inline-block;">
+         Low-Carb
+      </div>
+   </div>
+   <% end %>
+   <% if @recipe.kosher == true%>
+   <div class="col s2" style="display:block;">
+      <div style="display:inline-block;">
+         <i class="material-icons">done</i>
+      </div>
+      <div style="display:inline-block;">
+         Kosher
+      </div>
+   </div>
+   <% end %>
+   <% if @recipe.halal == true%>
+   <div class="col s2" style="display:block;">
+      <div style="display:inline-block;">
+         <i class="material-icons">done</i>
+      </div>
+      <div style="display:inline-block;">
+         Halal
+      </div>
+   </div>
+   <% end %>
+</div>
+<div style="margin-bottom:50px">
+   <h5>Overview </h5>
+   <p>Prep Time: <%= @recipe.prep_time %> minutes</p>
+   <p>Cook Time: <%= @recipe.cook_time %> minutes</p>
+   <p><strong>Total Time: <%= "#{@recipe.prep_time + @recipe.cook_time}" %> minutes</strong></p>
+</div>
+<div style="margin-bottom:50px">
+   <h5>Ingredients: </h5>
+   <% if @recipe.ingredients.count > 0 %>
+   <ul>
+      <% @recipe.recipe_ingredients.each do |i| %>
+      <li><%= i.quantity %> <%= i.units%>  <%= i.ingredient.name %>  — <%= link_to "Remove", i, method: :delete %></li>
+      <% end %>
+   </ul>
+   <% end %>
+   <% if current_user == @recipe.author%>
+   <!-- Modal Trigger -->
+   <a class="modal-trigger waves-effect waves-light btn" href="#add_recipe_ingredient_modal">Add Ingredient</a>
+   <!-- Modal Structure -->
+   <div id="add_recipe_ingredient_modal" class="modal modal-fixed-footer">
+      <div class="modal-content">
+         <h4>Add Ingredient to <%=@recipe.name%></h4>
+         <%= render 'recipe_ingredients/recipe_ingredient_form' %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div style="margin-bottom:50px">
+   <h5>Instructions: </h5>
+   <%= simple_format @recipe.instructions %>
+</div>
+<br>
+<!-- MODALS -->
+<div id="delete_recipe_modal" class="modal modal-fixed-footer">
+   <div class="modal-content">
+      <h4>Are you sure you want to delete <%=@recipe.name%>?</h4>
+      <% if @recipe.savers.count == 1 %>
+      <p>
+         <%= @recipe.savers.count %> other chef has saved this recipe and will miss it dearly!
+      </p>
+      <% elsif @recipe.savers.count > 1 %>
+      <p>
+         <%= @recipe.savers.count %> other chefs have saved this recipe and will miss it dearly!
+      </p>
+      <% else%>
+      <p>
+         Other chefs will miss out on your knowledge!
+      </p>
+      <% end %>
+   </div>
+   <div class="modal-footer">
+      <div>
+         <%= link_to "Yes, Delete This Recipe", @recipe, method: :delete, class:'btn' %>
+      </div>
+      <div>
+         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">No, Don't Delete</a>
+      </div>
+   </div>
+</div>

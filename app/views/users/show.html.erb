@@ -1,0 +1,75 @@
+<h5>USER PROFILE</h5>
+<div style="height:150px; width: 150px;">
+   <% if @user.image? %>
+   <%= image_tag @user.image.url(:medium), style:"width:150px; height:150px; object-fit:cover; border-radius: 50%" %>
+   <% else %>
+   <img src= "<%= asset_path('ProfileImageDefault.png')%>" alt="profile image default" style="width:150px;height:150px; object-fit:cover; ">
+   <% end %>
+</div>
+<div>
+   <h3> <%= @user.name %></h3>
+</div>
+<div>
+   <% if @user == current_user  %>
+   <p>
+      <%= link_to "Edit Profile", edit_user_path, class:'btn' %> <%= link_to "Add New Recipe", new_recipe_path, class:'btn' %>
+   </p>
+   <% end %>
+</div>
+<div style="margin-top:50px">
+   <h5 > Account Details </h5>
+   <ul>
+      <li>
+         Email: <%= @user.email %>
+      </li>
+      <li>
+         Location: <%= @user.location %>
+      </li>
+   </ul>
+</div>
+<div style="margin-top:50px">
+   <h5> Authored Recipes </h5>
+   <% if @user.recipes.count > 0%>
+   <% @user.recipes.each do |recipe|%>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px 20px 10px;">
+      <div  style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div  style="margin: 10px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+   <% else %>
+   <p>
+      <%= @user.first_name%> has not yet authored any recipes
+   </p>
+   <% end %>
+</div>
+<div style="margin-top:50px">
+   <h5> Saved Recipes </h5>
+   <% if @user.saved_recipes.count > 0%>
+   <% @user.saved_recipes.each do |recipe|%>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px 20px 10px;">
+      <div  style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div  style="margin: 10px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+   <% else %>
+   <p>
+      <%= @user.first_name%> has not yet saved any recipes
+   </p>
+   <% end %>
+</div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RecipeSharing</title>
+      <!-- Latest compiled and minified CSS -->
+      <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+   </head>
+   <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>$(document).ready(function() {
+         $('select').material_select();
+         $('.modal').modal();
+         });
+      </script>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown1" class="dropdown-content">
+         <%if logged_in?%>
+         <li><a href="<%= user_path(current_user) %>">My Profile</a></li>
+         <li><%= link_to "Sign Out", signout_path, method: :post%></li>
+         <li> <%= link_to "Add Recipe", new_recipe_path %>  </li>
+         <% else %>
+         <li class="show-on-small"><a href="<%= new_user_path %>">Sign Up</a></li>
+         <li class="show-on-small"><a href="<%= signin_path  %>">Sign In</a></li>
+         <%end%>
+         <li class="divider"></li>
+         <li class="hide-on-large-only"><a href="<%= users_path %>">All Users</a></li>
+         <li class="hide-on-large-only"><a href="<%= recipes_path %>">All Recipes</a></li>
+      </ul>
+      <nav style="margin-bottom: 20px">
+         <div class="nav-wrapper  yellow darken-3">
+            <a href="<%= root_url %>" class="brand-logo left"><img src= "<%= asset_path( 'chef_hat_logo.png' )%>" alt="logo" style="width:45px;height:45px;margin:10px 0px 0px 20px"></a>
+            <ul class="right">
+               <li class="hide-on-small-only"><a href="<%= users_path %>">All Users</a></li>
+               <li class="hide-on-small-only"><a href="<%= recipes_path %>">All Recipes</a></li>
+               <%if logged_in?%>
+               <!-- Dropdown Trigger -->
+               <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Hi, <%= current_user.first_name%><i class="material-icons right">arrow_drop_down</i></a></li>
+               <% else %>
+               <li class="hide-on-med-and-up"><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu<i class="material-icons right">arrow_drop_down</i></a></li>
+               <li class="hide-on-small-only"><a href="<%= new_user_path %>">Sign Up</a></li>
+               <li class="hide-on-small-only"><a href="<%= signin_path  %>">Sign In</a></li>
+               <%end%>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <% if flash[:notice] %>
+         <div>
+            <script>Materialize.toast('<%= flash[:notice] %>', 4000)</script>
+         </div>
+         <% end %>
+         <%= yield %>
+         <div style="display:block; height:100px; width:10px">
+         </div>
+      </div>
+   </body>
+</html>

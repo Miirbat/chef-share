@@ -1,0 +1,19 @@
+<%=form_for(@user) do |f| %>
+  <%= f.label :image, 'Profile Picture' %><br>
+  <%= f.file_field :image  %><br><br>
+  <%= f.label :first_name, 'First Name *'%> <br>
+  <%= f.text_field(:first_name, placeholder: "First Name", required: true, class: 'validate')%> <br><br>
+  <%= f.label :last_name%> <br>
+  <%= f.text_field(:last_name, placeholder: "Last Name")%> <br><br>
+  <%= f.label :email, 'Email *'%> <br>
+  <%= f.text_field(:email, placeholder: "Email", required: true, class: 'validate')%> <br><br>
+  <%= f.label :password, 'Password *'%> <br>
+  <%= f.password_field(:password, placeholder: "Password", required: true, class: 'validate')%><br><br>
+  <%= f.label :password_confirmation, 'Password Confirmation *'%> <br>
+  <%= f.password_field(:password_confirmation, placeholder: "Confirm Password", class: 'validate')%><br><br>
+
+  <%= f.label :location%> <br>
+  <%= f.text_field(:location, placeholder: "City, State")%> <br><br>
+
+  <%= f.submit class: 'btn'%>
+<%end%>

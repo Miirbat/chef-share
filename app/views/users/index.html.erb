@@ -1,0 +1,32 @@
+<div class="row">
+    <form class="col s12" action="/search_users" method="post">
+      <div class="row">
+        <br>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">search</i>
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+          <input id="icon_prefix" type="text" class="validate" name="search">
+          <label for="icon_prefix">Search</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+<div class="row">
+<h1>All Users</h1>
+   <% User.all.each do |user| %>
+   <div class="col s3" style="display: inline-block; margin: 20px 0;">
+     <div  style="width:120px; height:100px; display: block;">
+        <% if user.image? %>
+        <a href="<%=user_path(user) %>"><%=image_tag user.image.url(:thumb), style:"width:100px;height:100px; object-fit:cover; border-radius: 50%"%></a>
+        <% else %>
+          <a href="<%=user_path(user) %>"><img src= "<%= asset_path( 'ProfileImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:100px;height:100px;"></a>
+        <% end %>
+     </div>
+     <div style="margin: 10px 0 0 0;display:block; width:100px;  text-align: center;">
+      <%= link_to user.first_name, user_path(user), style:"color:black; font-size: 16px; " %>
+     </div>
+ </div>
+   <% end %>
+</div>

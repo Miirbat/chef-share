@@ -1,0 +1,140 @@
+<h2>Welcome to FaceCook!</h2>
+<p>
+   <%= Time.now.strftime("%B %d, %Y") %>
+</p>
+<div style="margin-bottom:20px">
+   <h5>Featured Recipes of This Week</h5>
+   <% Recipe.featured.each do |recipe| %>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px;">
+      <div  style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div  style="margin: 10px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div >
+   <h5>Top Chefs</h5>
+   <% Recipe.top_users.each do |user| %>
+   <div class="col s3" style="display: inline-block; margin: 20px 10px;">
+      <div  style="width:120px; height:100px; display: block;">
+         <% if user.image? %>
+         <a href="<%=user_path(user) %>"><%=image_tag user.image.url(:thumb), style:"width:100px;height:100px; object-fit:cover; border-radius: 50%"%></a>
+         <% else %>
+         <a href="<%=user_path(user) %>"><img src= "<%= asset_path( 'ProfileImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:100px;height:100px;"></a>
+         <% end %>
+      </div>
+      <div style="margin: 10px 0 0 0;display:block; width:100px;  text-align: center;">
+         <%= link_to user.first_name, user_path(user), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div>
+   <h5>Top Recipes of All Time</h5>
+   <% Recipe.top_recipes.each do |recipe| %>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px;">
+      <div  style="width:100%; height:200px; display: block; margin: 0 0 10px 0">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div style="margin: 5px 0 0 0; display:block;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div>
+   <h5>Fastest Food</h5>
+   <% Recipe.fast_food.each do |recipe| %>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px;">
+      <div style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div style="margin: 5px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div>
+   <h5>Best Vegan Recipes</h5>
+   <% Recipe.top_vegan.each do |recipe| %>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px;">
+      <div  style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div style="margin: 5px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div>
+   <h5>Best Low Carb Recipes</h5>
+   <% Recipe.top_low_carb.each do |recipe| %>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px;">
+      <div style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div style="margin: 5px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div >
+   <h5>Best Kosher Recipes</h5>
+   <% Recipe.top_kosher.each do |recipe| %>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px;">
+      <div style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div style="margin: 5px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>
+<div>
+   <h5>Best Halal Recipes</h5>
+   <% Recipe.top_halal.each do |recipe| %>
+   <div class="col s4" style="display: inline-block; margin: 20px 10px;">
+      <div style="width:100%; height:200px; display: block">
+         <% if recipe.image? %>
+         <a href="<%=recipe_path(recipe) %>"><%=image_tag recipe.image.url(:medium), style:"width:300px;height:200px; object-fit:cover"%></a>
+         <% else %>
+         <img src= "<%= asset_path( 'RecipeImageDefault.png' )%>" alt="Photograph of a chocolate cupcake." style="width:300px;height:200px;object-fit:cover">
+         <% end %>
+      </div>
+      <div style="margin: 5px 0 0 0;">
+         <%= link_to recipe.name, recipe_path(recipe), style:"color:black; font-size: 16px; " %>
+      </div>
+   </div>
+   <% end %>
+</div>

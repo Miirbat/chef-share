@@ -1,0 +1,13 @@
+<div class="row">
+   <form class="col s12" action="/search" method="post">
+      <div class="row">
+         <br><br><br><br>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">search</i>
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input id="icon_prefix" type="text" class="validate" name="search">
+            <label for="icon_prefix">Search</label>
+         </div>
+      </div>
+   </form>
+</div>

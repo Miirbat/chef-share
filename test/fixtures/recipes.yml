@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  author_id: 1
+  prep_time: 1
+  cook_time: 1
+  instructions: MyText
+  source: MyString
+
+two:
+  name: MyString
+  author_id: 1
+  prep_time: 1
+  cook_time: 1
+  instructions: MyText
+  source: MyString

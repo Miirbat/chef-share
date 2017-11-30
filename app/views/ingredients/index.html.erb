@@ -1,0 +1,20 @@
+<h1> Ingredients List</h1>
+  <table cellspacing='20'>
+    <tr>
+      <th>Name</th>
+      <th>&nbsp;</th>
+      <th>Category</th>
+      <th>&nbsp;</th>
+      <th>Food Group</th>
+    </tr>
+    <% @ingredients.each do |ingredient| %>
+    <tr>
+      <td> <%= ingredient.name %> </td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td> <%= ingredient.category %> </td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td> <%= ingredient.food_group %> </td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td> <%= link_to "#{ingredient.name}", ingredient_path(ingredient) %> </ bbtd>
+    </tr>
+    <% end %>
+  </table>
+<br>
+  <%= link_to "Add New Ingredient", new_ingredient_path %>

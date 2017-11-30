@@ -1,0 +1,29 @@
+<%= form_for(@recipe) do |f| %>
+
+  <%= f.hidden_field :author_id, :value => current_user.id %>
+  <%= f.label :image, 'Add image of recipe' %><br>
+  <%= f.file_field :image %><br><br>
+  <%= f.label :name, 'Name Your Recipe: ' %>
+  <%= f.text_field :name, required: true, class: 'validate' %><br><br>
+  <%= f.label :prep_time, 'Minutes to prep your recipe: ' %>
+  <%= f.number_field :prep_time, required: true, class: 'validate' %><br><br>
+  <%= f.label :cook_time, 'Minutes to cook your recipe: ' %>
+  <%= f.number_field :cook_time, required: true, class: 'validate' %><br><br>
+  <%= f.label :instructions, 'Instructions: ' %>
+  <%= f.text_area :instructions, required: true, class: 'validate', placeholder:'Please write your ingredient instructions here. You will be able to add a structured ingredients list on the following page.'%><br><br>
+
+  <%= f.check_box :vegetarian, id:'vegetarian' %>
+  <%= f.label 'Vegetarian?', id: 'vegetarian', for:'vegetarian' %><br>
+  <%= f.check_box :vegan, id:'vegan' %>
+  <%= f.label 'Vegan?', id: 'vegan', for:'vegan' %><br>
+  <%= f.check_box :gluten_free, id:'gluten_free' %>
+  <%= f.label 'Gluten-Free?', id: 'gluten_free', for:'gluten_free' %><br>
+  <%= f.check_box :low_carb, id:'low_carb' %>
+  <%= f.label 'Low-Carb?', id: 'low_carb', for:'low_carb' %><br>
+  <%= f.check_box :halal, id:'halal' %>
+  <%= f.label 'Halal?', id: 'halal', for:'halal' %><br>
+  <%= f.check_box :kosher, id:'kosher' %>
+  <%= f.label 'Kosher?', id: 'kosher', for:'kosher' %><br><br>
+  <%= f.submit class: 'btn'%>
+
+<% end %>
