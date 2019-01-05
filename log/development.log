@@ -1,0 +1,857 @@
+Started GET "/" for 127.0.0.1 at 2018-08-16 11:17:25 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-16 11:30:07 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-16 11:31:16 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "recipesharing_development" does not exist
+):
+  
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:705:in `rescue in connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-21 16:16:56 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "recipesharing_development" does not exist
+):
+  
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:705:in `rescue in connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35mSQL (44.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (40.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "ingredients" CASCADE[0m
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" bigserial primary key, "name" character varying, "category" character varying, "food_group" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipe_ingredients" CASCADE[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "recipe_ingredients" ("id" bigserial primary key, "recipe_id" bigint, "ingredient_id" bigint, "quantity" float, "units" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_recipe_ingredients_on_ingredient_id" ON "recipe_ingredients"  ("ingredient_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_recipe_ingredients_on_recipe_id" ON "recipe_ingredients"  ("recipe_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes" CASCADE[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "name" character varying, "author_id" integer, "prep_time" integer, "cook_time" integer, "instructions" text, "source" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "published" boolean, "vegetarian" boolean, "vegan" boolean, "gluten_free" boolean, "low_carb" boolean, "kosher" boolean, "halal" boolean)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "saver_recipes" CASCADE[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "saver_recipes" ("id" bigserial primary key, "saver_id" bigint, "saved_recipe_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_saver_recipes_on_saved_recipe_id" ON "saver_recipes"  ("saved_recipe_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_saver_recipes_on_saver_id" ON "saver_recipes"  ("saver_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "email" character varying, "password_digest" character varying, "location" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "last_name" character varying)[0m
+  [1m[35m (4.9ms)[0m  [1m[35mALTER TABLE "recipe_ingredients" ADD CONSTRAINT "fk_rails_209d9afca6"
+FOREIGN KEY ("ingredient_id")
+  REFERENCES "ingredients" ("id")
+[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "recipe_ingredients" ADD CONSTRAINT "fk_rails_176a228c1e"
+FOREIGN KEY ("recipe_id")
+  REFERENCES "recipes" ("id")
+[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170622145933)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170621154841),
+(20170622141741),
+(20170620135512),
+(20170620133924),
+(20170620135356),
+(20170620134120),
+(20170622133306),
+(20170621165632),
+(20170620132618);
+
+[0m
+  [1m[35m (46.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-21 21:36:14.324533"], ["updated_at", "2018-11-21 21:36:14.324533"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "ingredients" CASCADE[0m
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" bigserial primary key, "name" character varying, "category" character varying, "food_group" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipe_ingredients" CASCADE[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "recipe_ingredients" ("id" bigserial primary key, "recipe_id" bigint, "ingredient_id" bigint, "quantity" float, "units" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_recipe_ingredients_on_ingredient_id" ON "recipe_ingredients"  ("ingredient_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_recipe_ingredients_on_recipe_id" ON "recipe_ingredients"  ("recipe_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "recipes" CASCADE[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" bigserial primary key, "name" character varying, "author_id" integer, "prep_time" integer, "cook_time" integer, "instructions" text, "source" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "published" boolean, "vegetarian" boolean, "vegan" boolean, "gluten_free" boolean, "low_carb" boolean, "kosher" boolean, "halal" boolean)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "saver_recipes" CASCADE[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "saver_recipes" ("id" bigserial primary key, "saver_id" bigint, "saved_recipe_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_saver_recipes_on_saved_recipe_id" ON "saver_recipes"  ("saved_recipe_id")[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_saver_recipes_on_saver_id" ON "saver_recipes"  ("saver_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "email" character varying, "password_digest" character varying, "location" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "image_file_name" character varying, "image_content_type" character varying, "image_file_size" integer, "image_updated_at" timestamp, "last_name" character varying)[0m
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "recipe_ingredients" ADD CONSTRAINT "fk_rails_209d9afca6"
+FOREIGN KEY ("ingredient_id")
+  REFERENCES "ingredients" ("id")
+[0m
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "recipe_ingredients" ADD CONSTRAINT "fk_rails_176a228c1e"
+FOREIGN KEY ("recipe_id")
+  REFERENCES "recipes" ("id")
+[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20170622145933)[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20170621154841),
+(20170622141741),
+(20170620135512),
+(20170620133924),
+(20170620135356),
+(20170620134120),
+(20170622133306),
+(20170621165632),
+(20170620132618);
+
+[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-21 21:36:14.455014"], ["updated_at", "2018-11-21 21:36:14.455014"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-11-26 21:39:30 -0500
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRecipe Load (3.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE ("recipes"."created_at" BETWEEN $1 AND $2) AND "recipes"."published" = $3[0m  [["created_at", "2018-11-20 02:39:30.750559"], ["created_at", "2018-11-27 02:39:30.751781"], ["published", "t"]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered welcome/index.html.erb within layouts/application (82.5ms)
+Completed 200 OK in 472ms (Views: 409.4ms | ActiveRecord: 52.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-11-26 21:39:43 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 65ms (Views: 43.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2018-11-26 21:39:45 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (9.5ms)
+Completed 200 OK in 84ms (Views: 78.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2018-11-26 21:39:47 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (14.8ms)
+Completed 200 OK in 74ms (Views: 69.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-11-26 21:39:48 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user_form.html.erb (21.3ms) [cache miss]
+  Rendered users/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 100ms (Views: 52.2ms | ActiveRecord: 26.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-11-26 21:40:19 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HaCgU4ZbGle7rxXUc0tvuV2h9dCWgQPruLHigyuD7eh9Uq6AIbx6HrSmyilH47/jzp+ODZVjXmvnvozI415Ksg==", "user"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007ffa48b60400 @tempfile=#<Tempfile:/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/RackMultipart20181126-2585-1120fcu.JPG>, @original_filename="IMG_1576.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"IMG_1576.JPG\"\r\nContent-Type: image/jpeg\r\n">, "first_name"=>"Mirna", "last_name"=>"Plakalovic", "email"=>"mirnap91@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "location"=>"New York"}, "commit"=>"Create User"}
+[paperclip] Trying to link /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/RackMultipart20181126-2585-1120fcu.JPG to /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-13oaosn.JPG
+[paperclip] Trying to link /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-13oaosn.JPG to /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-3b4uh6.JPG
+Command :: file -b --mime '/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-3b4uh6.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-13oaosn.JPG[0]' 2>/dev/null
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-11-26 21:41:03 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HaCgU4ZbGle7rxXUc0tvuV2h9dCWgQPruLHigyuD7eh9Uq6AIbx6HrSmyilH47/jzp+ODZVjXmvnvozI415Ksg==", "user"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007ffa5186b110 @tempfile=#<Tempfile:/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/RackMultipart20181126-2585-1p4cdco.JPG>, @original_filename="IMG_1576.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"IMG_1576.JPG\"\r\nContent-Type: image/jpeg\r\n">, "first_name"=>"Mirna", "last_name"=>"Plakalovic", "email"=>"mirnap91@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "location"=>"New York"}, "commit"=>"Create User"}
+[paperclip] Trying to link /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/RackMultipart20181126-2585-1p4cdco.JPG to /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-14gfgm.JPG
+[paperclip] Trying to link /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-14gfgm.JPG to /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-d7rr63.JPG
+Command :: file -b --mime '/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-d7rr63.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2585-14gfgm.JPG[0]' 2>/dev/null
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started GET "/" for 127.0.0.1 at 2018-11-26 21:41:32 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE ("recipes"."created_at" BETWEEN $1 AND $2) AND "recipes"."published" = $3[0m  [["created_at", "2018-11-20 02:41:32.237305"], ["created_at", "2018-11-27 02:41:32.237601"], ["published", "t"]]
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered welcome/index.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 290ms (Views: 274.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-11-26 21:41:42 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user_form.html.erb (37.6ms) [cache miss]
+  Rendered users/new.html.erb within layouts/application (40.4ms)
+Completed 200 OK in 124ms (Views: 71.6ms | ActiveRecord: 19.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-11-26 21:42:08 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JqWd8FqDBj0BLqMcl+4VY9dn6/yzTKwzmUXtapBeM8xGV5Mj/WRmdA4nfOGjRsU5RFmQIbCu8bPGSoMhWIOUlg==", "user"=>{"image"=>#<ActionDispatch::Http::UploadedFile:0x007ff2ede380b8 @tempfile=#<Tempfile:/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/RackMultipart20181126-2980-1mozgg5.JPG>, @original_filename="IMG_1576.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[image]\"; filename=\"IMG_1576.JPG\"\r\nContent-Type: image/jpeg\r\n">, "first_name"=>"Mirna", "last_name"=>"Plakalovic", "email"=>"mirnap91@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "location"=>"New York"}, "commit"=>"Create User"}
+[paperclip] Trying to link /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/RackMultipart20181126-2980-1mozgg5.JPG to /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2980-1hxj9so.JPG
+[paperclip] Trying to link /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2980-1hxj9so.JPG to /var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2980-tgu09v.JPG
+Command :: file -b --mime '/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2980-tgu09v.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/c4/x1kwzj9d6tbb7z8wg5xpjtlr0000gn/T/4190f520102f337cf2cf2bebe1e9f21320181126-2980-1hxj9so.JPG[0]' 2>/dev/null
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for 127.0.0.1 at 2018-11-26 21:43:06 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WXXfQaOlr2XPiDEHw9B3bx+DS9P4NUt78VHuyqVE5YjM4txUfbL/NNsIshRrshyu1GUQujfOvrpAYnEfDt21Ag==", "user"=>{"first_name"=>"Mirna", "last_name"=>"Plakalovic", "email"=>"mirnap91@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "location"=>"New York"}, "commit"=>"Create User"}
+  [1m[36mUser Exists (2.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mirnap91@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mirnap91@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (43.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "email", "password_digest", "location", "created_at", "updated_at", "last_name") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Mirna"], ["email", "mirnap91@gmail.com"], ["password_digest", "$2a$10$Jvl68JH0RcwLFpToe/XQQuryJiuI7vpTMWt8hGLuk.rpzS2TQh6RK"], ["location", "New York"], ["created_at", "2018-11-27 02:43:06.555349"], ["updated_at", "2018-11-27 02:43:06.555349"], ["last_name", "Plakalovic"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 137ms (ActiveRecord: 47.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-11-26 21:43:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (43.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."author_id" = $1[0m  [["author_id", 1]]
+  [1m[35m (56.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" INNER JOIN "saver_recipes" ON "recipes"."id" = "saver_recipes"."saved_recipe_id" WHERE "saver_recipes"."saver_id" = $1[0m  [["saver_id", 1]]
+  Rendered users/show.html.erb within layouts/application (153.1ms)
+Completed 200 OK in 192ms (Views: 74.0ms | ActiveRecord: 107.4ms)
+
+
+Started GET "/recipes/new" for 127.0.0.1 at 2018-11-26 21:43:23 -0500
+Processing by RecipesController#new as HTML
+  Rendering recipes/new.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered recipes/_recipe_form.html.erb (17.4ms) [cache miss]
+  Rendered recipes/new.erb within layouts/application (20.3ms)
+Completed 200 OK in 85ms (Views: 49.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/recipes" for 127.0.0.1 at 2018-11-26 21:43:47 -0500
+Processing by RecipesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d9tvBnX7mY/tfgo3cgHcIog5kyz/Fgb9y1D8nCAhL8N+4fAezymR2kSo0IMl1PWypP4D+QCVyH1Bt0QoWuQMRQ==", "recipe"=>{"author_id"=>"1", "name"=>"Spaghetti", "prep_time"=>"50", "cook_time"=>"25", "instructions"=>"spaghetti, meatballs, sauce", "vegetarian"=>"0", "vegan"=>"0", "gluten_free"=>"0", "low_carb"=>"0", "halal"=>"0", "kosher"=>"0"}, "commit"=>"Create Recipe"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "author_id", "prep_time", "cook_time", "instructions", "created_at", "updated_at", "vegetarian", "vegan", "gluten_free", "low_carb", "kosher", "halal") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Spaghetti"], ["author_id", 1], ["prep_time", 50], ["cook_time", 25], ["instructions", "spaghetti, meatballs, sauce"], ["created_at", "2018-11-27 02:43:47.331647"], ["updated_at", "2018-11-27 02:43:47.331647"], ["vegetarian", "f"], ["vegan", "f"], ["gluten_free", "f"], ["low_carb", "f"], ["kosher", "f"], ["halal", "f"]]
+  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 66ms (ActiveRecord: 43.2ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2018-11-26 21:43:47 -0500
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" ORDER BY "ingredients"."name" ASC[0m
+  Rendered recipe_ingredients/_recipe_ingredient_form.html.erb (5.8ms) [cache miss]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  Rendered recipes/show.erb within layouts/application (54.0ms)
+Completed 200 OK in 109ms (Views: 62.6ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2018-11-26 21:44:07 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2018-11-26 21:44:10 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 38.6ms | ActiveRecord: 0.9ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/recipes" for 127.0.0.1 at 2018-11-26 21:46:31 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.9ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (33.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 361ms (Views: 318.4ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2018-11-26 21:46:38 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 38.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-11-26 21:46:42 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" WHERE "recipes"."author_id" = $1[0m  [["author_id", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE "recipes"."author_id" = $1[0m  [["author_id", 1]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "recipes" INNER JOIN "saver_recipes" ON "recipes"."id" = "saver_recipes"."saved_recipe_id" WHERE "saver_recipes"."saver_id" = $1[0m  [["saver_id", 1]]
+  Rendered users/show.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 109ms (Views: 90.2ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2018-11-26 21:46:46 -0500
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" ORDER BY "ingredients"."name" ASC[0m
+  Rendered recipe_ingredients/_recipe_ingredient_form.html.erb (10.0ms) [cache miss]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  Rendered recipes/show.erb within layouts/application (74.3ms)
+Completed 200 OK in 179ms (Views: 109.8ms | ActiveRecord: 34.0ms)
+
+
+Started PATCH "/recipes/1" for 127.0.0.1 at 2018-11-26 21:46:49 -0500
+Processing by RecipesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EpMRIwbzsRR4anh1KKIQpJFUP098z2ehzT6m+LbckM67Oi7Jc6d2XelmxZ/1szPUVbfz7m8mwlhLug70BeIPIw==", "recipe"=>{"published"=>"true"}, "commit"=>"Publish Recipe", "id"=>"1"}
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (8.4ms)[0m  [1m[33mUPDATE "recipes" SET "published" = $1, "updated_at" = $2 WHERE "recipes"."id" = $3[0m  [["published", "t"], ["updated_at", "2018-11-27 02:46:49.799988"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/recipes/1
+Completed 302 Found in 23ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/recipes/1" for 127.0.0.1 at 2018-11-26 21:46:49 -0500
+Processing by RecipesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT  "recipes".* FROM "recipes" WHERE "recipes"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering recipes/show.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "ingredients" INNER JOIN "recipe_ingredients" ON "ingredients"."id" = "recipe_ingredients"."ingredient_id" WHERE "recipe_ingredients"."recipe_id" = $1[0m  [["recipe_id", 1]]
+  [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" ORDER BY "ingredients"."name" ASC[0m
+  Rendered recipe_ingredients/_recipe_ingredient_form.html.erb (5.8ms) [cache miss]
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  Rendered recipes/show.erb within layouts/application (29.5ms)
+Completed 200 OK in 89ms (Views: 78.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2018-11-26 21:46:51 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (1.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (6.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 43.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/signout" for 127.0.0.1 at 2018-11-26 21:48:15 -0500
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EavjXAwnY9WrZqGawYWndxFSEklmzVVtaC5DyXaZAqmEPOBJ0jAzhL/mIolp58y22rRJIKk2oKzZHdwc3QBSIw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-26 21:48:15 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE ("recipes"."created_at" BETWEEN $1 AND $2) AND "recipes"."published" = $3[0m  [["created_at", "2018-11-20 02:48:15.133772"], ["created_at", "2018-11-27 02:48:15.134006"], ["published", "t"]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered welcome/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 69ms (Views: 62.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2018-11-26 21:48:18 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2018-11-26 21:48:21 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user_form.html.erb (22.5ms) [cache miss]
+  Rendered users/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-03 18:49:59 -0500
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-12-03 18:50:15 -0500
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (0.21.0) lib/pg.rb:56:in `initialize'
+pg (0.21.0) lib/pg.rb:56:in `new'
+pg (0.21.0) lib/pg.rb:56:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:701:in `connect'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:220:in `initialize'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `new'
+activerecord (5.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:38:in `postgresql_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in `new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in `checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in `try_to_checkout_new_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in `acquire_connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in `checkout'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in `connection'
+activerecord (5.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:116:in `retrieve_connection'
+activerecord (5.1.1) lib/active_record/connection_handling.rb:88:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:562:in `connection'
+activerecord (5.1.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.1) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.1) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-12-18 14:41:15 -0500
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRecipe Load (4.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE ("recipes"."created_at" BETWEEN $1 AND $2) AND "recipes"."published" = $3[0m  [["created_at", "2018-12-11 19:41:15.540507"], ["created_at", "2018-12-18 19:41:15.541555"], ["published", "t"]]
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mUser Load (47.8ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered welcome/index.html.erb within layouts/application (440.2ms)
+Completed 200 OK in 504ms (Views: 379.0ms | ActiveRecord: 115.7ms)
+
+
+Started GET "/ingredients" for 127.0.0.1 at 2018-12-18 14:41:21 -0500
+Processing by IngredientsController#index as HTML
+  Rendering ingredients/index.html.erb within layouts/application
+  [1m[36mIngredient Load (1.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  Rendered ingredients/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 48ms (Views: 35.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/ingredients/new" for 127.0.0.1 at 2018-12-18 14:41:24 -0500
+Processing by IngredientsController#new as HTML
+  Rendering ingredients/new.html.erb within layouts/application
+  Rendered ingredients/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 77ms (Views: 62.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 21:37:53 -0500
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRecipe Load (5.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE ("recipes"."created_at" BETWEEN $1 AND $2) AND "recipes"."published" = $3[0m  [["created_at", "2018-12-29 02:37:54.092011"], ["created_at", "2019-01-05 02:37:54.094094"], ["published", "t"]]
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mUser Load (37.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered welcome/index.html.erb within layouts/application (428.3ms)
+Completed 200 OK in 505ms (Views: 387.9ms | ActiveRecord: 107.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-01-04 21:39:38 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2019-01-04 21:39:39 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (6.4ms)
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-01-04 21:39:41 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 59ms (Views: 53.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-01-04 21:39:44 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user_form.html.erb (32.6ms) [cache miss]
+  Rendered users/new.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2019-01-04 21:39:45 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for 127.0.0.1 at 2019-01-04 21:39:47 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lJroykvHbAFfw3NPB1zAW5Mi+NNtSY/P6/A5K84/Jmx/IALFnk1maINmxY0RREPLVjCAcWJIcI1dTJhZhT7LbQ==", "user"=>{"email"=>"mirna", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mirna"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2019-01-04 21:39:49 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_user_form.html.erb (5.1ms) [cache miss]
+  Rendered users/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
