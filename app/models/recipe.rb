@@ -47,12 +47,12 @@ class Recipe < ApplicationRecord
     Recipe.published.find_all{|r| r.low_carb}.sort_by{|r| r.savers.length}.reverse.first(6)
   end
 
-  def self.top_kosher
-    Recipe.published.find_all{|r| r.kosher}.sort_by{|r| r.savers.length}.reverse.first(6)
-  end
-
-  def self.top_halal
-    Recipe.published.find_all{|r| r.halal}.sort_by{|r| r.savers.length}.reverse.first(6)
-  end
+  # def self.top_kosher
+  #   Recipe.published.find_all{|r| r.kosher}.sort_by{|r| r.savers.length}.reverse.first(6)
+  # end
+  #
+  # def self.top_halal
+  #   Recipe.published.find_all{|r| r.halal}.sort_by{|r| r.savers.length}.reverse.first(6)
+  # end
 
 end
