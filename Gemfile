@@ -40,6 +40,8 @@ gem 'jquery-rails'
 gem 'material_icons'
 
 gem 'nokogiri', '~> 1.10'
+gem 'sprockets'
+gem 'bundler'
 
 gem 'puma', '~> 3.12'
 
