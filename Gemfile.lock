@@ -122,7 +122,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.5)
-    puma (3.9.1)
+    puma (3.12.0)
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -219,7 +219,7 @@ DEPENDENCIES
   paperclip!
   pg
   pry
-  puma
+  puma (~> 3.12)
   rails (~> 5.1.1)
   rails4-autocomplete
   sass-rails (~> 5.0)
@@ -232,7 +232,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.6.0p0
+   ruby 2.5.0p0
 
 BUNDLED WITH
    1.17.3
