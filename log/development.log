@@ -1021,3 +1021,56 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 41ms (Views: 36.8ms | ActiveRecord: 1.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-04 23:40:31 -0500
+  [1m[35m (42.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE ("recipes"."created_at" BETWEEN $1 AND $2) AND "recipes"."published" = $3[0m  [["created_at", "2018-12-29 04:40:31.573743"], ["created_at", "2019-01-05 04:40:31.576597"], ["published", "t"]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered welcome/index.html.erb within layouts/application (432.3ms)
+Completed 200 OK in 478ms (Views: 457.1ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-04 23:40:44 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mRecipe Load (0.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes" WHERE ("recipes"."created_at" BETWEEN $1 AND $2) AND "recipes"."published" = $3[0m  [["created_at", "2018-12-29 04:40:44.740476"], ["created_at", "2019-01-05 04:40:44.740548"], ["published", "t"]]
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "saver_recipes" ON "users"."id" = "saver_recipes"."saver_id" WHERE "saver_recipes"."saved_recipe_id" = $1[0m  [["saved_recipe_id", 1]]
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  [1m[36mCACHE Recipe Load (0.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered welcome/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/recipes" for 127.0.0.1 at 2019-01-04 23:40:53 -0500
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.erb within layouts/application
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  Rendered recipes/index.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-01-04 23:40:53 -0500
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
