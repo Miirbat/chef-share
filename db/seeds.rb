@@ -14,37 +14,9 @@ def getAllIngredients
   end
 end
 
-def getAllFruits
-  i = 0
-  while i < 69 do
-    Ingredient.create!(name: Faker::Food.unique.fruits)
-    i += 1
-  end
-end
-
-def getAllSpices
-  i = 0
-  while i < 183 do
-    Ingredient.create!(name: Faker::Food.unique.spice)
-    i += 1
-  end
-end
-
-def getAllVegetables
-  i = 0
-  while i < 64 do
-    Ingredient.create!(name: Faker::Food.unique.vegetables)
-    i += 1
-  end
-end
-
-
-
 
 getAllIngredients()
-getAllFruits()
-getAllSpices()
-getAllVegetables()
+
 
 
 # all_the_ingredients = Ingredient.create(hasher_turner_into(newArr))
