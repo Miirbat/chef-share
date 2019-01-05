@@ -219,7 +219,7 @@ DEPENDENCIES
   paperclip!
   pg
   pry
-  puma (~> 3.7)
+  puma
   rails (~> 5.1.1)
   rails4-autocomplete
   sass-rails (~> 5.0)

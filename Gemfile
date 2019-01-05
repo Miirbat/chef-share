@@ -11,7 +11,7 @@ gem 'rails', '~> 5.1.1'
 # Use postgres as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+# gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
@@ -40,6 +40,8 @@ gem 'jquery-rails'
 gem 'material_icons'
 
 gem 'nokogiri', '~> 1.10'
+
+gem 'puma'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
